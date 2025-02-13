@@ -7,7 +7,8 @@ count = 0
 
 
 @app.route("/")
-def index(count=count):
+def index():
+    global count
     count += 1
     return f"Hello, World from Germany! You visited this page {count} times."
 
